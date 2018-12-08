@@ -13,6 +13,6 @@
  *= require_tree .
  *= require_self
  */
- @import './top/index.scss';
- @import './compornents/common.scss';
- @import './compornents/compornent.scss'
+ @import 'top/index';
+ @import 'compornents/common';
+ @import 'compornents/compornent';
