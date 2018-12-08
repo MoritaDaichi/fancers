@@ -1,0 +1,109 @@
+.top_index_topside_content_box{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 30px rgba(black, .2);
+  background: lighten(#f0f4c3, 10%);
+  position: relative;
+  overflow: hidden;
+  transform: translated3d(0,0,0);
+}
+.top_index_topside_content_box:after {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(#e8a,1), rgba(#def,0), 80%, rgba(white,.5));
+  z-index: 11;
+  transform: translat3d(0, 0, 0);
+}
+@keyframes drift{
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+.wave {
+  opacity: .4;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  background: #0af;
+  width: 2000px;
+  height: 2000px;
+  margin-left: -1000px;
+  margin-top: -1300px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 8000ms infinite linear;
+}
+
+.wave.-three {
+  animation: drift 9000ms infinite linear;
+}
+
+.wave.-two {
+  animation: drift 12000ms infinite linear;
+  opacity: .1;
+  background: yellow;
+}
+
+
+.top_index_body{
+  text-align: center;
+  // background-image: image-url("alchemy.gif");
+  background-size: cover;
+}
+.top_index_title_box{
+  background: linear-gradient(to bottom, rgba(#e8a,1), rgba(#def,0), 80%, rgba(white,0));
+  padding-top: 100px;
+  padding-bottom: 50px;
+  width: 100%;
+  z-index: 1;
+  line-height: 100px;
+  text-align: center;
+  transform: translate3d(0, 0, 0);
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: .4em;
+  font-size: 100px;
+  text-shadow: 0 1px 0 rgba(black, .1);
+  text-indent: .3em;
+}
+.top_index_websites{
+  margin: 0 auto;
+  width: 960px;
+  height: 600px;
+  &__site_link{
+    float: left;
+    padding-bottom: 10px;
+  }
+  &--img-circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px 10px 10px 10px;
+    border: double 5px black;
+    position: relative;
+    &:hover div{
+      opacity: 1.0;
+      transition: all 300ms 0s ease;
+    }
+    div{
+      opacity: 0.0;
+      padding: 0px;
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      text-align: center;
+      background-color: rgba(255,255,255,0.5);
+      font-size: 30px;
+      color: black;
+      position: absolute;
+      top:0px;
+      font-weight: 700;
+    }
+  }
+}

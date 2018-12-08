@@ -1,0 +1,15 @@
+//デバッグ用にcontrollerとかを表示する奴のcss
+.debug_dump{
+  background-color: #FAFA;
+  width: 600px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  clear: both;
+}
+//黒色の半透明のマスクをかぶせることで背景色を半透明にしている
+.black_mask{
+  background: rgba(0,0,0,0.1);
+  height: 100%;
+}
+
