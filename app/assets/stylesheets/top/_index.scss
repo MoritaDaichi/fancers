@@ -1,0 +1,50 @@
+.top_index_body{
+  background-color: rgb(2,192,203);
+  width: 100%;
+  height: 100%;
+  .top_index_title_box{
+    p{
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size:40px;
+    &__square{
+      margin: 0 auto;
+      height: 120px;
+      width: 120px;
+      overflow: hidden;
+      padding-bottom: 50px;
+      img{
+        width: 120px;
+        height: 120px;
+      }
+    }
+    &__first_line_black{
+      font-size: 24px;
+      color: black;
+    }
+    &__first_line_white{
+      font-size: 24px;
+      color: white;
+    }
+  }
+  .top_index_tutorial_box{
+    height: 400px;
+    width: 80%;
+    margin: 0 auto;
+    display: table;
+    margin-top: 30px;
+    &__base{
+      display: table-cell;
+      margin-left: 20px;
+      text-align: center;
+      p{
+        font-size: 18px;
+        padding-top: 10px;
+      }
+    }
+  }
+}
