@@ -1,5 +1,9 @@
 {
   "name": "morita-adachi",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "alexa-sdk": "^1.0.25",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
 }
