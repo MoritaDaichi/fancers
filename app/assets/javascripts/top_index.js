@@ -9,7 +9,6 @@ $(function(){
         html = '<div class="block' + random + '"><div>';
         $addBlocks.append(html) ;
       }
-     
     }
   })
 })
