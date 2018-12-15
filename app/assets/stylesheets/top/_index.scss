@@ -1,56 +1,65 @@
+.top_index_header{
+  width: 600px;
+  height: 1000px;
+  position: absolute;
+  top: -360px;
+  left: -160px;
+  transform: rotate(45deg);//angle
+  background-image:image-url("eb16.png");
+  overflow: hidden;
+  &__column_base{
+    text-align: left;
+    height: 145px;
+    transform: rotate(-45deg);
+    margin-top:100px;
+    // position: absolute;
+  }
+  &__one_column{
+    margin-top:300px;
+    @extend .top_index_header__column_base;
+    background-color: rgba(53,53,63,0.9);
+    color: rgba(233,233,233,1.0);
+    width: 760px;
+    margin-top: 210px;
+    margin-left: 42.2px;
+  }
+  &__two_column{
+    @extend .top_index_header__column_base;
+    background-color: rgba(233,233,233,0.9);
+    color: rgba(53,53,63,1.0);
+    position: relative;
+    top: -87px;
+    right: -166px;
+  }
+  &__three_column{
+    @extend .top_index_header__column_base;
+    background-color: rgba(53,53,63,0.9);
+    color: rgba(233,233,233,1.0);
+    position: relative;
+    top: -230px;
+    right: -268.4px;
+  }
+  &__four_column{
+    @extend .top_index_header__column_base;
+    background-color: rgba(233,233,233,0.9);
+    color: rgba(53,53,63,1.0);
+    position: relative;
+    top: -372px;
+    right: -370px;
+
+  }
+  &__five_column{
+    @extend .top_index_header__column_base;
+    background-color: rgba(53,53,63,0.9);
+    color: rgba(233,233,233,1.0);
+    position: relative;
+    top: -516px;
+    right: -472px;
+  }
+}
+
 .top_index_body{
-  background-color: rgb(2,192,203);
+  height: 705px;
   width: 100%;
-  height: 100%;
-  .top_index_title_box{
-    p{
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-    text-align: center;
-    color: white;
-    font-weight: 700;
-    font-size:40px;
-    &__square{
-      margin: 0 auto;
-      background-color: white;
-      height: 45px;
-      width: 100px;
-      overflow: hidden;
-      padding-bottom: 50px;
-      position: relative;
-      border-radius: 5px;
-      img{
-        height: 150px;
-        width: 250px;
-        position: absolute;
-        left: -75px;
-        top: -25px;
-      }
-    }
-    &__first_line_black{
-      font-size: 24px;
-      color: black;
-    }
-    &__first_line_white{
-      font-size: 24px;
-      color: white;
-    }
-  }
-  .top_index_tutorial_box{
-    height: 400px;
-    width: 80%;
-    margin: 0 auto;
-    display: table;
-    margin-top: 30px;
-    &__base{
-      display: table-cell;
-      margin-left: 20px;
-      text-align: center;
-      p{
-        font-size: 18px;
-        padding-top: 10px;
-      }
-    }
-  }
+  background-color: rgba(150,0,0,1);
 }
