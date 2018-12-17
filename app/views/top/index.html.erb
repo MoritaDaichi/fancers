@@ -1,22 +1,70 @@
 <%= provide :title ,'top'%>
 <div class='top_index_header'>
   <div class='top_index_header__one_column'>
-    about1
+    about
   </div>
   <div class='top_index_header__two_column'>
-    about2
+    member
   </div>
   <div class='top_index_header__three_column'>
-    about3
+    special
   </div>
   <div class='top_index_header__four_column'>
-    about4
+    form
   </div>
   <div class='top_index_header__five_column'>
-    about4
   </div>
 </div>
 <div class='top_index_body'>
-  aa
+  <div class='top_index_title'>
+    <h1>Fencers</h1>
+  </div>
+  <div class='top_index_about'>
+    <p class='top_index_about__sub_title'>
+      About
+    </p>
+    <h1 class='top_index_about__title'>
+      Fancers
+      <span>とは?</span>
+    </h1>
+    <div class='top_index_about__sentence'>
+      <p>
+        "面白いことを形にする"をテーマに
+      </p>
+      <p>
+        結成されたKUTのサークルです
+      </p>
+      <p>
+        このサイトは3人のメンバーによって制作されました
+      </p>
+  </div>
 </div>
-
+<div class='top_index_activity'>
+  <div class='top_index_activity__left_container'>
+    <h1 class='top_index_activity__title'>
+      活動内容
+    </h1>
+    <ul>
+      <li>
+        <%= check_box_tag :top_index_acitivity__check_one ,{class: 'top_index_activity__check-one', checked: true}  %>
+        <%= label_tag :top_index_acitivity__check_one, "作品制作" %>
+      </li>
+      <li>
+        vs コンテンツ
+      </li>
+      <li>
+        イベント  &
+        ハンズオン
+      </li>
+    </ul>
+  </div>
+    <div class='top_index_activity__image-one'>
+      <%= image_tag 'winter' %>
+    </div>
+    <div class='top_index_activity__image-two'>
+      <%= image_tag 'winter' %>
+    </div>
+    <div class='top_index_activity__image-three'>
+      <%= image_tag 'winter' %>
+    </div>
+</div>
