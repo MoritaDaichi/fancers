@@ -29,7 +29,7 @@
     </h1>
     <div class='top_index_about__sentence'>
       <p>
-        "面白いことを形にする"をテーマに
+        "面白いことを形に"をテーマに
       </p>
       <p>
         結成されたKUTのサークルです
@@ -46,15 +46,16 @@
     </h1>
     <ul>
       <li>
-        <%= check_box_tag :top_index_acitivity__check_one ,{class: 'top_index_activity__check-one', checked: true}  %>
+        <%= check_box 'top', 'index_acitivity__check_one', {checked: true}, true,class: 'top_index_acitivity__check_one'%>
         <%= label_tag :top_index_acitivity__check_one, "作品制作" %>
       </li>
       <li>
-        vs コンテンツ
+        <%= check_box 'top', 'index_acitivity__check_two', {checked: false}, true, false %>
+        <%= label_tag :top_index_acitivity__check_two, "vs コンテンツ" %>
       </li>
       <li>
-        イベント  &
-        ハンズオン
+        <%= check_box 'top', 'index_acitivity__check_three', {checked: false}, true, false %>
+        <%= label_tag :top_index_acitivity__check_three, "イベント & ハンズオン" %>
       </li>
     </ul>
   </div>
@@ -67,4 +68,20 @@
     <div class='top_index_activity__image-three'>
       <%= image_tag 'winter' %>
     </div>
+</div>
+<div class='top_index_members'>
+  <h1 class='top_index_members__title'>
+    members
+  </h1>
+  <div class='top_index_members__box'>
+    <div class='top_index_members__base'>
+      
+    </div>
+    <div class='top_index_members__base'>
+      
+    </div>
+    <div class='top_index_members__base'>
+      
+    </div>
+  </div>
 </div>
