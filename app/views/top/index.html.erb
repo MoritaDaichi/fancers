@@ -46,16 +46,19 @@
     </h1>
     <ul>
       <li>
-        <%= check_box 'top', 'index_acitivity__check_one', {checked: true}, true,class: 'top_index_acitivity__check_one'%>
-        <%= label_tag :top_index_acitivity__check_one, "作品制作" %>
+        <p class="top_index_activity__check-one">
+          作品制作
+        </p>
       </li>
       <li>
-        <%= check_box 'top', 'index_acitivity__check_two', {checked: false}, true, false %>
-        <%= label_tag :top_index_acitivity__check_two, "vs コンテンツ" %>
+        <p class="top_index_activity__check-two">
+          vs コンテンツ
+        </p>
       </li>
       <li>
-        <%= check_box 'top', 'index_acitivity__check_three', {checked: false}, true, false %>
-        <%= label_tag :top_index_acitivity__check_three, "イベント & ハンズオン" %>
+        <p class="top_index_activity__check-three">
+          イベント & ハンズオン
+        </p>
       </li>
     </ul>
   </div>
@@ -63,10 +66,10 @@
       <%= image_tag 'winter' %>
     </div>
     <div class='top_index_activity__image-two'>
-      <%= image_tag 'winter' %>
+      <%= image_tag 'alchemy' %>
     </div>
     <div class='top_index_activity__image-three'>
-      <%= image_tag 'winter' %>
+      <%= image_tag 'junk-mail' %>
     </div>
 </div>
 <div class='top_index_members'>
@@ -75,7 +78,13 @@
   </h1>
   <div class='top_index_members__box'>
     <div class='top_index_members__base'>
-      
+      <div class='top_index_members__img'>
+        <%= image_tag 'winter' %>
+      </div>
+      <p>adachi kenshi</p>
+      <p>fantastic beast</p>
+      <p>css js html</p>
+      <p>otoko</p>
     </div>
     <div class='top_index_members__base'>
       
