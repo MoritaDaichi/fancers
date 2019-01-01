@@ -1,0 +1,36 @@
+.index_top_body{
+  background-image: image-url("wall.jpg");
+  min-height: 100vh;
+  height: 100%;
+  background-repeat: repeat;
+  margin: 0 auto;
+  &__title{
+    font-size: 120px;
+    font-weight: 700;
+    text-align: center;
+    padding-top:120px;
+    // p{
+    //   background-image: image-url("wood.jpg");
+    // }
+
+  }
+  &__contents_box{
+    padding:20px;
+    border: 10px solid black;
+    border-radius: 10px;
+    margin-top: 50px;
+    
+  }
+  &__contents_box_green{
+    @extend .index_top_body__contents_box;
+    background-color: rgba(0,100,0,0.3);
+  }
+  &__contents_box_red{
+    @extend .index_top_body__contents_box;
+    background-color: rgba(100,0,0,0.3);
+  }
+  &__contents_box_blue{
+    @extend .index_top_body__contents_box;
+    background-color: rgba(0,0,100,0.3);
+  }
+}
