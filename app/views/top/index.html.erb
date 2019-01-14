@@ -1,5 +1,5 @@
-<%= provide :title ,'Fencers公式ホームページ'%>
-<!DOCTYPE html>
+<%= provide :title ,'Fencers 公式ホームページ'%>
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -9,11 +9,11 @@
         <script src="js/base.js"></script>
         <link rel="stylesheet" href="css/base.css" media="all" charset="utf-8">
     </head>
-    <body>
+    <body> -->
         <div id = "basecontent">
                 <header>
                         <p>
-                          <img src="img/icon.jpg">
+                          <%= image_tag("icon") %>
                         </p>
                         <nav>
                           <ul>
@@ -25,9 +25,9 @@
                         </nav>
                 </header>
             <div id="slide">
-                 <img src="img/slide2.jpg" >
-                 <img src="img/slide3.jpg" >
-                 <img src="img/slide1.jpg" >
+                 <%= image_tag("slide2") %>
+                 <%= image_tag("slide3") %>
+                 <%= image_tag("slide1") %>
                     <div class = "box">
                         <p>Fencers</p>
                     </div>
@@ -41,19 +41,19 @@
                 <div id="member">
                     <div class="people1">
                         <center>
-                            <img src="img/people2.jpg">
+                            <%= image_tag("people2") %>
                             <p>read more...</p>
                         </center>
                     </div>
                     <div class="people2">
                         <center>
-                        <img src="img/people1.jpg">
+                        <%= image_tag("people1") %>
                         <p>read more...</p>
                         </center>
                     </div>
                     <div class="people3">
                         <center>
-                        <img src="img/people3.jpg">
+                        <%= image_tag("people3") %>
                         <p>read more...</p>
                         </center>
                     </div>
@@ -63,19 +63,19 @@
                     <div class="behav1 js-animation">
                             <center>
                                 <p>1.もくもく会<p>
-                                <img src="img/benkyou.jpg">
+                                <%= image_tag("benkyou") %>
                             </center>
                     </div>
                     <div class="behav2 js-animation">
                             <center>
                                 <p>2.イベント参加<p>
-                                <img src="img/people2.jpg">
+                                <%= image_tag("people2") %>
                             </center>
                     </div>
                     <div class="behav3 js-animation">
                             <center>
                                 <p>3.サービス開発</p>
-                                <img src="img/image.jpg">
+                                <%= image_tag("image") %>
                             </center>
                     </div>
                 </div>
@@ -88,8 +88,10 @@
             <footer>
                 <br><br><br>
                 <small><p>Copyright(c) 2019 Fencers.</p></small>
-                <div id="pagetop"><a href="#basecontent"><img src="img/footer.jpg"></a></div>
+                <div id="pagetop">
+                  <a href="#basecontent">
+                    <%= image_tag("footer") %>
+                  </a>
+                </div>
             </footer>
         </div>
-    </body>
-</html>
