@@ -13,9 +13,9 @@ $(function(){
     }else{
                  nextPage = page+1;
   };
-   console.log("random："+random);
-   console.log("page："+page);
-   console.log("nextPage："+nextPage);
+   // console.log("random："+random);
+   // console.log("page："+page);
+   // console.log("nextPage："+nextPage);
   
   //画像の重なり順の初期表示
   //nextPageを先頭にするのは初回のインターバルで前面に来る画像なのでこれをfadeOutするため
@@ -24,8 +24,8 @@ $(function(){
   
   //ページ切換関数
   function changePage(){
-   console.log("page："+page);
-   console.log("nextPage："+nextPage);
+   // console.log("page："+page);
+   // console.log("nextPage："+nextPage);
   //まず全部最背面へ
     $("#slide img").css("z-index","-3");
   //pageを最前面へ
