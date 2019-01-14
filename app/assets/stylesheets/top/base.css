@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Sawarabi+Mincho');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Noto+Serif+SC:400,700|Sawarabi+Mincho');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Kosugi+Maru|Roboto+Condensed|Sawarabi+Mincho');
+body{
+	width: 100%;
+	height: auto;
+	margin: 0;
+	}
+	header {
+		width: 100%;
+		text-align: right;
+		text-align: right;
+		top:0;
+		background-color: white;
+		height: 30px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		opacity: 0.7;
+		position: fixed;
+		z-index:10000;
+	}
+
+	header img  {
+			position: absolute;
+			left: 20px;
+			margin-top:-27px;
+			width: 60px;
+			height:60px;
+	}
+
+	nav ul li {
+			display: inline-block;
+			margin-right: 25px;
+			text-decoration-line: none;
+			font-family: 'Roboto Condensed', sans-serif;
+			font-family: 'Sawarabi Mincho', sans-serif;
+			font-family: 'Kosugi Maru', sans-serif;
+	}
+	nav ul li a{
+		text-decoration: none;
+	}
+  #slide{
+	width:100%;
+	position:relative;
+	background-color: rgba(0,0,0,0.6);
+	/* どの範囲に重ねるかを指定 */
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: ' ';
+  }
+  #slide img{
+	 position: absolute;
+	 left:0;
+	 top:0;
+	 width: 100%;
+	 height: 582px;
+  }
+  .box{
+	position: relative;
+	width: 100%;
+	height: 650px;
+	text-align: center;
+  }
+  .box p{
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-family: 'Indie Flower', cursive;
+	  font-size: 50px;
+	  border-bottom: solid 1px #fff;
+	  padding-left:80px;
+	  padding-right: 60px;
+	  letter-spacing: 0.4em;
+	  color: aliceblue;
+	  position: absolute;
+		top: 38%;
+		left: 50%;
+		-ms-transform: translate(-50%,-50%);
+		-webkit-transform : translate(-50%,-50%);
+		transform : translate(-50%,-50%);
+  }
+  #animation{
+	  width:100%;
+	  margin-top:800px;
+	  height:auto;
+  }
+ #animation h1 {
+	text-align: center;
+	font-size: 44px;
+	letter-spacing: 0.3em;
+	margin-bottom:60px;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-family: 'Noto Serif SC', serif;
+  }
+ #animation p {
+	text-align: center;
+	font-size: 18px;
+	letter-spacing: 0.1em;
+	line-height: 250%;
+	margin-top:140px;
+	margin-bottom:250px;
+	font-family: 'Sawarabi Mincho', sans-serif;
+  }
+.fadeInDown {
+	-webkit-animation-fill-mode:both;
+	-ms-animation-fill-mode:both;
+	animation-fill-mode:both;
+	-webkit-animation-duration:1s;
+	-ms-animation-duration:1s;
+	animation-duration:1s;
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+	visibility: visible !important;
+}
+@-webkit-keyframes fadeInDown {
+ 0% { opacity: 0; -webkit-transform: translateY(-100px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fadeInDown {
+	0% { opacity: 0; -webkit-transform: translateY(-100px); -ms-transform: translateY(-100px); transform: translateY(-100px); }
+	100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+#member{
+	width:100%;
+	height:800px;
+}
+.people1{
+	width:33%;
+	height: 700px;
+	float:left;
+	background-color:#fff;
+	display: inline-block;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	color: #fff;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all  0.3s ease;
+}
+.people1 img{
+	width:300px;
+	height:300px;
+	margin-top: 30%;
+	border-radius: 400px;
+	border:5px solid #fff;
+	box-shadow: 0px 0px 10px #ccc;
+}
+.people1 p{
+	margin-top:140px;
+	font-size:22px;
+	letter-spacing: 0.3em;
+	font-family: 'Roboto Condensed', sans-serif;
+	}
+.people1:hover{
+	-moz-box-shadow: 10px 10px 50px rgb(36, 35, 35);
+	-webkit-box-shadow: 10px 10px 50px rgb(36, 35, 35);
+	box-shadow: 10px 10px 50px rgb(36, 35, 35);
+	color: #000;
+}
+.people2{
+	width:33%;
+	height: 700px;
+	margin: auto;
+	margin-left: 6px;
+	background-color:#fff;
+	display: inline-block;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	color: #fff;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all  0.3s ease;
+}
+.people2 p{
+	margin-top:140px;
+	font-size:22px;
+	letter-spacing: 0.3em;
+	font-family: 'Roboto Condensed', sans-serif;
+	}
+.people2 img{
+	width:300px;
+	height:300px;
+	margin-top: 30%;
+	border-radius: 400px;
+	border:5px solid #fff;
+	box-shadow: 0px 0px 10px #ccc;
+}
+.people2:hover{
+	-moz-box-shadow: 10px 10px 50px rgb(36, 35, 35);
+	-webkit-box-shadow: 10px 10px 50px rgb(36, 35, 35);
+	box-shadow: 10px 10px 50px rgb(36, 35, 35);
+	color: #000;
+}
+.people3{
+	width:33%;
+	height:700px;
+	float:right;
+	background-color:#fff;
+	display: inline-block;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	color: #fff;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all  0.3s ease;
+}
+.people3 p{
+	margin-top:140px;
+	font-size:22px;
+	letter-spacing: 0.3em;
+	font-family: 'Roboto Condensed', sans-serif;
+	}
+.people3 img{
+	width:300px;
+	height:300px;
+	margin-top: 30%;
+	border-radius: 400px;
+	border:5px solid #fff;
+	box-shadow: 0px 0px 10px #ccc;
+}
+.people3:hover{
+	-moz-box-shadow: 10px 10px 50px rgb(36, 35, 35);
+	-webkit-box-shadow: 10px 10px 50px rgb(36, 35, 35);
+	box-shadow: 10px 10px 50px rgb(36, 35, 35);
+	color:#000;
+}
+#subpage{
+	margin-top:100px;
+	width:100%;
+	height:650px;
+}
+#subpage h1 {
+	text-align: center;
+	font-size: 48px;
+	letter-spacing: 0.3em;
+	margin-bottom:120px;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-family: 'Noto Serif SC', serif;
+  }
+.behav1{
+	width:33%;
+	height: 520px;
+	float:left;
+	background-color:#fff;
+	display: inline-block;
+}
+.behav1 p{
+	font-size:30px;
+	letter-spacing: 0.3em;
+	color: #c70067;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+.behav1 img{
+	width:300px;
+	height:300px;
+	margin-top: 65px;
+	border:5px solid #fff;
+	box-shadow: 0px 0px 10px #ccc;
+}
+.behav2{
+	width:33%;
+	height: 520px;
+	margin: 0 auto;
+	background-color:#fff;
+	display: inline-block;
+}
+.behav2 p{
+	font-size:30px;
+	letter-spacing: 0.3em;
+	color: #c70067;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+.behav2 img{
+	width:300px;
+	height:300px;
+	margin-top: 65px;
+	border:5px solid #fff;
+	box-shadow: 0px 0px 10px #ccc;
+}
+.behav3{
+	width:34%;
+	height: 520px;
+	float:right;
+	background-color:#fff;
+	display: inline-block;
+}
+.behav3 p{
+	font-size:30px;
+	letter-spacing: 0.3em;
+	color: #c70067;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+.behav3 img{
+	width:300px;
+	height:300px;
+	margin-top: 65px;
+	border:5px solid #fff;
+	box-shadow: 0px 0px 10px #ccc;
+}
+.js-animation {
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(40px);
+	transition: all 1s;
+  }
+  .js-animation.is-show {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0px);
+  }
+  #boxx{
+	  margin-top: 200px;
+	  height:450px;
+  }
+  .box27 {
+	width:65%;
+	height:400px;
+    position: relative;
+	margin: 2em 0;
+	margin: 0 auto;
+    padding: 0.5em 1em;
+    border: solid 3px #62c1ce;
+}
+.box27 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -27px;
+    left: -3px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    font-size: 17px;
+    background: #62c1ce;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+.box27 p {
+    margin: 0; 
+    padding: 0;
+}
+footer{
+	width: 100%;
+	height:200px;
+	background-color:#62c1ce;
+	text-align: center;
+}
+footer p{
+	color:#fff;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Sawarabi Mincho', sans-serif;
+}
+footer img{
+	width:100px;
+	height:100px;
+	float:right;
+	margin-right:160px;
+	margin-top:-40px;
+}
+
+#pageTop {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+#pageTop a {
+	display: block;
+	z-index: 999;
+}
