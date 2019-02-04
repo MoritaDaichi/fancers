@@ -1,0 +1,14 @@
+<%= form_tag("top#create", method: "post", class: "top_new_formbox") do %>
+  <%= label_tag(:name, "name:", class: "top_new_label") %>
+  <!-- 一つ目がどの入力ボックスとひもづけるか、だからしたと同じにする。右がラベルの名前 -->
+  <%= text_field_tag(:name,"", class: "top_new_textbox") %>
+<br>
+  <!-- これはparams[:name]で参照できる -->
+  <%= label_tag(:mail, "mail:" , class: "top_new_label") %>
+  <%= text_field_tag(:mail,"", class: "top_new_textbox") %>
+<br>
+  <%= label_tag(:message, "message:" , class: "top_new_label") %>
+  <%= text_field_tag(:message,"", class: "top_new_textbox") %>
+<br>
+  <%= submit_tag("send") %>
+<% end %>
